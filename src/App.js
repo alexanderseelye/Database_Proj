@@ -8,7 +8,6 @@ import Test from "./pages/test";
 import Home from "./pages/homepage";
 import Login from "./pages/login";
 import Register from "./pages/register";
-import NavBar from "./components/navbar";
 
 
 
@@ -16,7 +15,6 @@ function App() {
     return (
         <>
         <BrowserRouter>
-        <NavBar/>
         <Routes>
             <Route path="/" element={<Login/>}></Route>
             <Route path="/home" element={<Home/>}></Route>

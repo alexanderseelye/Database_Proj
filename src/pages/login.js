@@ -21,15 +21,6 @@ function Login() {
             return
         }
 
-        if ('' === userpassword) {
-            setPasswordError('Please enter a password')
-            return
-        }
-
-        if (userpassword.length < 7) {
-            setPasswordError('The password must be 8 characters or longer')
-            return
-        }
 
         fetch("http://127.0.0.1:5000/login", {
             method: "POST",
@@ -45,7 +36,7 @@ function Login() {
         .then((res) => res.json()).then((data) => {
             if (data.login) {
                 console.log("Login Successful");
-                navigate("/test")
+                navigate("/home")
             } else {
                 console.log("Login Failed!")
                 setUsernameError("Username or Password is incorrect!")

@@ -1,0 +1,59 @@
+.navBar {
+    width: 80%;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.title {
+    color: white;
+}
+
+
+.buttonHolder {
+    padding: 10px;
+    float: right;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+
+.header {
+    background: grey;
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.buttonHolder p::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    transition: all ease-in-out 250ms;
+}
+
+.buttonHolder p:hover::before {
+    width: 100%;
+}

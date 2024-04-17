@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import PlayerIcon from "../components/player_icons";
-
+import NavBar from "../components/navbar";
 
 function Home() {
 
@@ -29,11 +29,14 @@ function Home() {
 
 
     return (
-        <div>
+        <>
+        <NavBar/>
+        <div style={{display: "flex", flexDirection: "row"}}>
             {data.results.map((record) => {
-                return <PlayerIcon name={record[0]} number={record[1]} ppg={record[2]} profilepic={record[3]}/>
+                return <PlayerIcon name={record[0]} number={record[1]} ppg={record[2]} profilepic={record[3]} colnames={data.columns}/>
             })}
         </div>
+        </>
     )
 }
  
