@@ -1,0 +1,17 @@
+.playerDisplay {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: playerIcons;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: '. . playerIcons';
+}
+
+.filterOptions {
+    width: auto;
+    margin: 5px;
+}

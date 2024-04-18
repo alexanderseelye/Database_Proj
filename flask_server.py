@@ -62,11 +62,11 @@ def get_users():
 @app.route("/players")
 @headers(my_headers)
 def get_players():
-    db_cur.execute("SELECT * FROM playerinfo")
+    db_cur.execute("SELECT name, pts, truereb, ast, gamesplayed, pfp FROM lakersplayers WHERE season = 2024 and pfp IS NOT NULL ORDER BY pts DESC")
     x = db_cur.fetchall()
     #print(x)
     y = {
-        "columns": ["Name", "Number", "PPG", "ProfilePic"],
+        "columns": ["Name", "Points", "Rebounds", "Assists", "Games Played", "PFP"],
         "results": x
         }
     # print(db_cur.execute("SELECT SESSION_USER, CURRENT_USER").fetchall())

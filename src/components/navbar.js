@@ -16,6 +16,18 @@ function NavBar(props) {
         navigate("/")
     }
 
+    const GoRoster = () => {
+        navigate("/roster")
+    }
+
+    const GoStandings = () => {
+        navigate("/standings")
+    }
+
+    const GoGames = () => {
+        navigate("/games")
+    }
+
     return (
         <div className="header">
         <div className="navBar">
@@ -27,6 +39,15 @@ function NavBar(props) {
                 <ul>
                     <li onClick={GoHome}>
                         <p>HOME</p>
+                    </li>
+                    <li onClick={GoRoster}>
+                        <p>ROSTER</p>
+                    </li>
+                    <li onClick={GoStandings}>
+                        <p>STANDINGS</p>
+                    </li>
+                    <li onClick={GoGames}>
+                        <p>GAMES</p>
                     </li>
                     <li onClick={LogOut}>
                         <p>LOGOUT</p>

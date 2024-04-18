@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import NavBar from "../components/navbar";
 import "./homepage.css"
 
-function Home() {
+function Standings() {
 
    
 
@@ -10,10 +10,10 @@ function Home() {
         <>
         <NavBar/>
         <div>
-            <h1>This is our Homepage!</h1>
+            <h1>This is our Standings!</h1>
         </div>
         </>
     )
 }
  
-export default Home;
+export default Standings;

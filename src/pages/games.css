@@ -1,0 +1,21 @@
+.gameList {
+    list-style-type: none;
+    background: blue;
+}
+
+.gameResults {
+    position: relative;
+}
+
+.gameResults::after {
+    content: "";
+    background: grey;
+    width: 0%;
+    transition: ease-in-out 250ms;
+    position: absolute;
+}
+
+.gameResults:hover::after {
+    content: "The winner is you!";
+    width: 100%;
+}

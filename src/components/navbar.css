@@ -1,5 +1,5 @@
 .navBar {
-    width: 80%;
+    width: 100%;
     background-color: grey;
     margin: 0 auto;
 }
@@ -38,7 +38,7 @@ ul {
 
 li {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 50px;
     padding-top: 25px;
     position: relative;
 }
@@ -57,3 +57,4 @@ li {
 .buttonHolder p:hover::before {
     width: 100%;
 }
+
