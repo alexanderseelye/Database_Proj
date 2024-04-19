@@ -59,6 +59,8 @@ def visualize_data(teamArr, statsNameArr, stats2DArr):
 
     ax.set_ylim(0, np.max(stats2DArr) * 1.5)
 
+    plt.savefig("bargraph.png")
+
 
 # visualize_data(teams, statNames, data)
 
@@ -103,7 +105,8 @@ def visualize_heatmap(teamArr, statsNameArr, stats2DArr):
     for j in range(teamLen):
         text = ax.text(j, i, stats2DArr[i, j],
                        ha="center", va="center", color="white")
-
+  
+  plt.savefig('team_heatmap.png')
 
 # visualize_heatmap(teams, statNames, data)
 
