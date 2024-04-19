@@ -9,7 +9,7 @@ import Home from "./pages/homepage";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import Roster from "./pages/roster";
-import Games from "./pages/games";
+import Stats from "./pages/stats";
 import Standings from "./pages/standings";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             <Route path="/test" element={<Test/>}></Route>
             <Route path="/register" element={<Register/>}></Route>
             <Route path="/roster" element={<Roster/>}></Route>
-            <Route path="/games" element={<Games/>}></Route>
+            <Route path="/stats" element={<Stats/>}></Route>
             <Route path="/standings" element={<Standings/>}></Route>
         </Routes>
         </BrowserRouter>

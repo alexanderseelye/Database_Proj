@@ -6,6 +6,7 @@
 
 .title {
     color: white;
+    padding-top: 10px;
 }
 
 
@@ -39,8 +40,9 @@ ul {
 li {
     display: inline-block;
     margin-left: 50px;
-    padding-top: 25px;
+    padding-top: 20px;
     position: relative;
+    cursor: default;
 }
 
 .buttonHolder p::before {

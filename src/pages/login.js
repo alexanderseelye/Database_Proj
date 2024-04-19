@@ -3,6 +3,10 @@ import {useNavigate} from "react-router-dom"
 import "./login.css"
 
 function Login() {
+
+    const IP = "http://127.0.0.1:5000"
+    // const IP = "http://192.168.40.150:5000"
+
     const [username, setUserName] = useState('')
     const [userpassword, setUserPassword] = useState('')
     const [usernameError, setUsernameError] = useState('')
@@ -22,7 +26,7 @@ function Login() {
         }
 
 
-        fetch("http://127.0.0.1:5000/login", {
+        fetch(IP + "/login", {
             method: "POST",
             headers: {
                 "Access-Control-Allow-Origin" : "*",

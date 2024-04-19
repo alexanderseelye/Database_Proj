@@ -24,8 +24,8 @@ function NavBar(props) {
         navigate("/standings")
     }
 
-    const GoGames = () => {
-        navigate("/games")
+    const GoStats = () => {
+        navigate("/stats")
     }
 
     return (
@@ -37,19 +37,19 @@ function NavBar(props) {
             </div>
             <div className="buttonHolder">
                 <ul>
-                    <li onClick={GoHome}>
+                    <li id="0" onClick={GoHome}>
                         <p>HOME</p>
                     </li>
-                    <li onClick={GoRoster}>
+                    <li id="1" onClick={GoRoster}>
                         <p>ROSTER</p>
                     </li>
-                    <li onClick={GoStandings}>
+                    <li id="2" onClick={GoStandings}>
                         <p>STANDINGS</p>
                     </li>
-                    <li onClick={GoGames}>
-                        <p>GAMES</p>
+                    <li id="3" onClick={GoStats}>
+                        <p>STATS</p>
                     </li>
-                    <li onClick={LogOut}>
+                    <li id="4" onClick={LogOut}>
                         <p>LOGOUT</p>
                     </li>
                 </ul>
