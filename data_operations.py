@@ -60,6 +60,7 @@ def visualize_data(teamArr, statsNameArr, stats2DArr):
     ax.set_ylim(0, np.max(stats2DArr) * 1.5)
 
     plt.savefig("bargraph.png")
+    plt.close(fig)
 
 
 # visualize_data(teams, statNames, data)
@@ -107,6 +108,7 @@ def visualize_heatmap(teamArr, statsNameArr, stats2DArr):
                        ha="center", va="center", color="white")
   
   plt.savefig('team_heatmap.png')
+  plt.close()
 
 # visualize_heatmap(teams, statNames, data)
 
