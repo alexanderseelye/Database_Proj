@@ -56,17 +56,10 @@ def visualize_data(teamArr, statsNameArr, stats2DArr):
     multiplier = 0
 
     # What x is equivalent to depends on the value of statsLen
-    if statsLen < 3:
-        width = .5
-        x = np.arange(0, teamLen)
-
-    elif statsLen < 5:
-        width = .3
-        x = np.arange(0, teamLen * 1.5, 1.5)
-
-    elif statsLen < 8:
-        width = .25
-        x = np.arange(0, teamLen * 2, 2)
+    width = .25
+    spacing = 1 + (teamLen // 3) *.5
+    
+    x = np.arange(0, teamLen * spacing, spacing)
 
     fig, ax = plt.subplots(figsize=(5, 5))
 
