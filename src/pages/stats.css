@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.filterOptions {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.checkBox {
+    margin: 5px;
+}
+
+/* .generateGraphsButton {
+    width: 500px;
+} */
+

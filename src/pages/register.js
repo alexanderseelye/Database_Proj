@@ -3,6 +3,9 @@ import {useNavigate} from "react-router-dom"
 import "./register.css"
 
 function Register() {
+
+    const IP = "http://127.0.0.1:5000"
+
     const [username, setUserName] = useState('')
     const [userpassword, setUserPassword] = useState('')
     const [reuserpassword, setReUserPassword] = useState('')
@@ -37,7 +40,7 @@ function Register() {
             return
         }
 
-        fetch("http://127.0.0.1:5000/register", {
+        fetch(IP + "/register", {
             method: "POST",
             headers: {
                 "Access-Control-Allow-Origin" : "*",

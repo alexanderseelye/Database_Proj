@@ -12,6 +12,8 @@
 }
 
 .filterOptions {
-    width: auto;
+    width: 200px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
 }

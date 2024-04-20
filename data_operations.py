@@ -32,10 +32,10 @@ def visualize_data(teamArr, statsNameArr, stats2DArr):
     # declare some constants
     multiplier = 0
     width = .25
-    spacing = 1 + (teamLen // 3) * .5 
-    
-    # dynamic spacing
-    x =  np.arange(0, teamLen *spacing, spacing)
+    spacing = 1 + (teamLen // 3) *.5
+
+    # What x is equivalent to depends on the value of statsLen
+    x = np.arange(0, teamLen * spacing, spacing)
 
     fig, ax = plt.subplots(figsize=(5, 5))
 
